@@ -6,11 +6,12 @@
 }
 
 .card {
-  flex: 0 0 22em;
+  
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  width: 50%;
 }
 
 .card__media {
