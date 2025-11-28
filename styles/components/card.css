@@ -6,12 +6,11 @@
 }
 
 .card {
-  
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  width: 50%;
+  width: 45%;
 }
 
 .card__media {
