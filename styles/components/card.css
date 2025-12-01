@@ -14,8 +14,8 @@
 }
 
 .card__media {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 180px;
   object-fit: cover;
 }
 

@@ -244,9 +244,3 @@ body{
     padding-top: 5px;
 }
 
-.card__media{
-    object-fit: cover;
-    aspect-ratio: 16 / 10;
-    width: 30%;
-    height: 100%;
-}
