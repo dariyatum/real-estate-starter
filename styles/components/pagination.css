@@ -1,0 +1,35 @@
+.pagination {
+    width: 30%;
+    max-width: 768px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.pages {
+    display: flex;
+    gap: 15px;
+}
+
+.page {
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.page.active {
+    color: green;
+    font-weight: bold;
+    opacity: 1;
+}

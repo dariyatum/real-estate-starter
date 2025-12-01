@@ -6,12 +6,13 @@
 }
 
 .card {
-  flex: 0 0 22em;
+  flex: 0 1 19em;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
 
 .card__media {
   aspect-ratio: 16/10;
