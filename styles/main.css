@@ -216,6 +216,208 @@ img {
   object-fit: cover;
 }
 
+.discription__p{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+/* AGENTS FEW */
+
+
+.agents-container {
+  width: 768px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.agent-card {
+  width: 49%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.agent-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.agent-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 5px;
+}
+
+.agent-desc {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.view-btn {
+  padding: 8px 14px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* inquiry-form */
+
+.inquiry-form {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.inquiry-form h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.inquiry-form h4 {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.inquiry-form select,
+.inquiry-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.two-col {
+    display: flex;
+    gap: 10px;
+}
+
+.two-col input,
+.two-col select {
+    flex: 1;
+}
+
+.checkbox {
+    font-size: 13px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #00a63c;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.erer{
+  padding-top: 35px;
+}
+
+.submit-btn:hover {
+    background: #009233;
+}
+
+/* Responsive for 768px */
+@media (max-width: 768px) {
+    .inquiry-form {
+        width: 98%;
+    }
+
+    .two-col {
+        flex-direction: column;
+    }
+}
+
+
+
+/* testimonial */
+
+/* Main Section */
+.testimonials {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.testimonials h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Cards Grid */
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Card */
+.testimonial-card {
+  width: 49%;
+  background: #2ecc71; /* Green like your example */
+  color: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card:nth-child(3) {
+  background: #bdc3c7; /* Gray card in example */
+  color: #333;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.profile img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.profile span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+
 .why {
   background: var(--surface);
   border: 1px solid var(--line);
