@@ -10,7 +10,7 @@
     "price": 350,
     "currency": "USD",
     "location": {
-      "city": "Phnom Penh",
+      "city": "  Phnom Penh",
       "district": "Chamkarmon",
       "address": "Street 271, Tonle Bassac"
     },

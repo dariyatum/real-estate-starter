@@ -8,25 +8,35 @@
 .card {
   flex: 0 0 22em;
   background: var(--surface);
-  border: 1px solid var(--line);
+  /* border: 1px solid var(--line); */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
 .card__media {
-  aspect-ratio: 16/10;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
 .card__body {
   padding: 12px;
 }
-
+.card__body span{
+  color:white;
+}
 .card__title {
   margin: 0 0 6px;
   font-size: 1rem;
 }
 
+.card__location{
+  font-size: 20px;
+}
+
+.card__tion{
+  font-size: 15px;
+}
 .card__meta {
   font-size: 0.9rem;
   color: var(--muted);

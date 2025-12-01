@@ -14,7 +14,9 @@
 
   --line: #e9e2db;
 
-  --badge: #FF0000;
+  --badge: #14AE5C;
+
+  --color: #E8E8E8;
 
   --radius: 14px;
 
@@ -26,7 +28,22 @@
     Helvetica, Arial;
 
   --backgroud-card:#E8E8E8;
+
+  --bgsection:#EBEBEB;
+
+    --border-radius:10px;
+
+  --icon:#14AE5C;
+
+  --border:0.2px solid rgb(207, 207, 207);
+
+  --txtwhite:#fff;
+
+  --txtblack:#000;
+  
+  --section-bg:;
 }
+
 
 * {
   box-sizing: border-box;
@@ -58,16 +75,29 @@ img {
   padding-inline: 16px;
 }
 
+
+
+ /* BACKGROUND OF SECTION CARD */
+
+  #section__properties{
+    background-color: var(--bgsection);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
 .hero {
   padding: 16px;
 }
 
 .hero__card {
   background:var(--backgroud-card);
-  border: 1px solid  var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 18px;
+  padding: 8px;
+  
 }
 
 .hero__title {
@@ -83,7 +113,10 @@ img {
 .hero__form {
   display: grid;
   gap: 10px;
+  /* width:328px; */
+  display: flex;
 }
+
 
 .hero__row {
   display: grid;
@@ -152,6 +185,7 @@ img {
 
 .section__link {
   cursor: pointer;
+  color: var(--txtblack);
 }
 
 .section__link:hover {
