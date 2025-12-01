@@ -1,5 +1,66 @@
+:root {
+  /* Nude + Luxury palette */
+  --bg: #f6f2ee;
+
+  --surface: #F4F6F0;
+
+  --text: #1d1b16;
+
+  --muted: #7a736b;
+
+  --accent: #14AE5C;
+
+  --accent-600: #9f7c41;
+
+  --line: #e9e2db;
+
+  --badge: #14AE5C;
+  
+  --color: #E8E8E8;
+  --se:#3E4958;
+}
+
+
+.section{
+    width: 100%;
+   border-radius: 30px;
+   background: var(--color);
+}
+
+.hero-section{
+    width: 100%;
+    
+    background-color: var(--color);
+}
+
+.hero-sections{
+    width: 100%;
+    
+    /* background-color: var(--bg); */
+   
+}
+
+ .btn{
+    background-color: var(--badge);
+    margin: 5px;
+    font-size: 10px;
+    width: 80px;
+}
+
+.hero-sections .btn:hover{
+    background-color: var(--se);
+}
+
 .show-pagination{
     width: 100%;
     padding: 30px;
-    background-color: blanchedalmond;
+    background-color: var(--accent-600);
+}
+
+.hero-pagination{
+    width: 50%;
+    padding: 30px;
+    background-color:var(--color);
+    margin: auto;
+    border-radius: 30px;
 }

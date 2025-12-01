@@ -10,13 +10,14 @@
   display: flex;
   /* flex: 0 0 22em; */
   background: var(--surface);
-  border: 1px solid var(--line);
+  /* border: 1px solid var(--line); */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  margin-top: 10px
 }
 
 .card__media {
-  width: 150px;
+  width: 200px;
   height: 200px;
   object-fit: cover;
 }
@@ -32,6 +33,13 @@
   font-size: 1rem;
 }
 
+.card__location{
+  font-size: 20px;
+}
+
+.card__tion{
+  font-size: 15px;
+}
 .card__meta {
   font-size: 0.9rem;
   color: var(--muted);

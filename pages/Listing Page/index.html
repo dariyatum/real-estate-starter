@@ -18,6 +18,7 @@
 
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+    
 </head>
 
 <body> 
@@ -36,24 +37,36 @@
             <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
         </ul>
     </nav>
-   
+    <div class="section">
+        <div class="hero-section">
+            <p style="font-size: 15px;">Home</p>
+            <h1 style="font-size: 18px;">Property list</h1>
+            <div class="hero-sections">
+                <button class="btn" type="submit" >FOR RENT</button>
+                 <button class="btn" type="submit">FOR SALE</button>
+            </div>
+        </div>
+    </div>
 
-
+    
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
           <div class="hero__card">
              <form class="hero__form" action="#" role="search">
-                <select aria-label="Purpose" id="selectPurpose">
-                    <option>Rent</option>
-                    <option>Buy</option>
-                </select>
-                <select aria-label="Type" id="selectType">
-                   
+                <select aria-label="Purpose" id="selectPurpose" >
                     <option>Room</option>
                     <option>Apartment</option>
                     <option>House</option>
                 </select>
-                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+                <select aria-label="Type" id="selectType">
+                   
+                    <option>Kur Srov</option>
+                    <option>Mean Chey</option>
+                    <option> Tul PongRor</option>
+                    <option>Tul Kok</option>
+                    <option>Dangkoa</option>
+                </select>
+                <input class="hero__input" type="number" placeholder="Price" aria-label="price" />
             </form></div>
 
           
@@ -63,7 +76,7 @@
                 margin-top: 20px;"></div>
 
             <div class="show-pagination">
-                
+                <div class="hero-pagination"></div>
             </div>
 
  
