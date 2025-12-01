@@ -4,7 +4,7 @@ fetch("/public/data/agents.json")
     .then((response) => response.json())
     .then((data) => {
         if (data.length > 0){
-            for (let i = 0; i < 6; i++){
+            for (let i = 0; i < 8; i++){
                 sectionAgentsElement.innerHTML += `
                 <div class="agents__artist-card">
                     <div class="agents__card-image">

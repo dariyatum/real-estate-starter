@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
-
+    <link rel="stylesheet" href="styles/components/long and short card.css">
     <link rel="stylesheet" href="/styles/sticky.css">
 
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
@@ -21,7 +21,7 @@
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
 </head>
 
-<body>
+<body> HI
 
     <!-- ===== NAV ===== -->
     <nav class="nav" aria-label="Primary">
@@ -48,11 +48,10 @@
             <img class="hero__card--image" src="Image/Frame 1 (2).png" alt="">
             <div class="hero__container--search-bar">
                 <div class="hero__card--search-relative">
-                    <input class="hero__container--input" type="search">
+                    <input class="hero__container--input" type="search" style="color: white; font-size: 20px;" placeholder="search">
                     <a><img class="hero__card--search-icon" src="Image/search-bar.svg" alt=""></a>
                 </div>
             </div>
-           
         </div>  
         
         <!-- <div class="hero__card">
@@ -76,97 +75,56 @@
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
-    <section class="section container" style="background-color: #EBEBEB; border-radius: 10px; border: 0.2px solid grey;">
+    <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Featured Properties</h2>
         </div>
-        <div id="section__properties" style="display: flex; gap: 1rem;"></div>
-        <div id="section__properties2" style="display: flex; gap: 1rem;"></div>
+     <div id="section__properties" style="display: flex; gap: 1rem;"></div>
+    </section>
+       <!-- ===== Latest Properties (Horizontal) ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Latest Properties</h2>
+          
+        </div>
+        <div class="section contianer latest-main" id="Latest-Properties" aria-label="Latest properties">
 
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+              <div class="section contianer latest-main" id="Latest-Properties2" aria-label="Latest properties">
+
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
     </section>
 
     <!-- ===== Property Categories (Horizontal) ===== -->
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Property Categories</h2>
-            <a class="section__link" href="#">Show More</a>
+
         </div>
-        <div class="card-grid-groups" aria-label="Property categories">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?5" alt="Apartments" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Apartments</h3>
-                    <div class="card-top__meta">City living</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?6" alt="Houses" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Houses</h3>
-                    <div class="card-top__meta">Family homes</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
-                </div>
-            </article>
-        </div>
+         <article class="card-top">
+            <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Condo</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Apartment</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">House</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Villa</span>
+            </div>  
+            <a class="section__link" href="#">Show More</a>   
+        </article>
     </section>
 
-    <!-- ===== Latest Properties (Horizontal) ===== -->
-    <section class="section container">
-        <div class="section__head">
-            <h2 class="section__title">Latest Properties</h2>
-            <a class="section__link" href="#">Show More</a>
-        </div>
-        <div class="card-grid-groups" aria-label="Latest properties">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Studio — BKK1</h3>
-                    <div class="card-top__meta">$250 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Condo — Chroy Changvar</h3>
-                    <div class="card-top__meta">$560 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Townhouse — Russey Keo</h3>
-                    <div class="card-top__meta">$120,000</div>
-                </div>
-            </article>
-        </div>
-    </section>
+ 
 
     <!-- ===== Meet Our Agents (Top 3) ===== -->
     <section class="section container">
