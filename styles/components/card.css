@@ -6,14 +6,11 @@
 }
 
 .card {
-  width: 100%;
-  display: flex;
-  /* flex: 0 0 22em; */
+  flex: 0 0 22em;
   background: var(--surface);
   /* border: 1px solid var(--line); */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-top: 10px
 }
 
 .card__media {
