@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
+    <link rel="stylesheet" href="styles/components/long and short card.css">
+    <link rel="stylesheet" href="/styles/sticky.css">
 
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
@@ -24,8 +26,8 @@
     <!-- ===== NAV ===== -->
     <nav class="nav" aria-label="Primary">
         <div class="nav__bar container">
-            <a class="nav__brand" href="/">KH Realty</a>
-            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+            <img src="Image/Frame 296.png" alt="" class="nav__brand">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
         </div>
         <ul class="nav__list container" id="navList">
             <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
@@ -38,7 +40,21 @@
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
-        <div class="hero__card">
+        <div class="hero__container">
+            <h1 class="hero__container--title">The Most Trusted and <br>
+                 Effective <br>
+            Real Estate Partner <br>
+            in Cambodia!</h1>
+            <img class="hero__card--image" src="Image/Frame 1 (2).png" alt="">
+            <div class="hero__container--search-bar">
+                <div class="hero__card--search-relative">
+                    <input class="hero__container--input" type="search" style="color: white; font-size: 20px;" placeholder="search">
+                    <a><img class="hero__card--search-icon" src="Image/search-bar.svg" alt=""></a>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- <div class="hero__card">
             <h1 class="hero__title">Find your next home</h1>
             <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
             <form class="hero__form" action="#" role="search">
@@ -55,7 +71,7 @@
                 <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
                 <button class="hero__btn" type="submit">Search</button>
             </form>
-        </div>
+        </div> -->
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
@@ -63,41 +79,21 @@
         <div class="section__head">
             <h2 class="section__title">Featured Properties</h2>
         </div>
+     <div id="section__properties" style="display: flex; gap: 1rem;"></div>
+    </section>
+       <!-- ===== Latest Properties (Horizontal) ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Latest Properties</h2>
+          
+        </div>
+        <div class="section contianer latest-main" id="Latest-Properties" aria-label="Latest properties">
 
-        <div class="scroller" aria-label="Featured properties">
-            <div class="scroller__track">
-                <!-- Group A -->
-                <div class="scroller__group">
-                    <a class="card" href="/property/1">
-                        <img class="card__media" src="https://picsum.photos/640/400?1"
-                            alt="Modern apartment near AEON Mall" />
-                        <div class="card__body">
-                            <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
-                            <div class="card__meta">$350 / month • 2BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/2">
-                        <img class="card__media" src="https://picsum.photos/640/400?2"
-                            alt="Cozy student room near ITC" />
-                        <div class="card__body">
-                            <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
-                            <div class="card__meta">$80 / month • 1BR</div>
-                            <span class="badge">Available</span>
-                        </div>
-                    </a>
-                    <a class="card" href="/property/3">
-                        <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
-                        <div class="card__body">
-                            <h3 class="card__title">Family House — Sen Sok</h3>
-                            <div class="card__meta">$78,000 • 3BR</div>
-                            <span class="badge">For Sale</span>
-                        </div>
-                    </a>
-                </div>
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+              <div class="section contianer latest-main" id="Latest-Properties2" aria-label="Latest properties">
 
-
-            </div>
+              <!-- <a class="section__link" href="#">Show More</a> -->
         </div>
     </section>
 
@@ -105,63 +101,30 @@
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Property Categories</h2>
-            <a class="section__link" href="#">Show More</a>
+
         </div>
-        <div class="card-grid-groups" aria-label="Property categories">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Rooms</h3>
-                    <div class="card-top__meta">Budget stays</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?5" alt="Apartments" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Apartments</h3>
-                    <div class="card-top__meta">City living</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?6" alt="Houses" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Houses</h3>
-                    <div class="card-top__meta">Family homes</div>
-                </div>
-            </article>
-        </div>
+         <article class="card-top">
+            <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Condo</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Apartment</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">House</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Villa</span>
+            </div>  
+            <a class="section__link" href="#">Show More</a>   
+        </article>
     </section>
 
-    <!-- ===== Latest Properties (Horizontal) ===== -->
-    <section class="section container">
-        <div class="section__head">
-            <h2 class="section__title">Latest Properties</h2>
-            <a class="section__link" href="#">Show More</a>
-        </div>
-        <div class="card-grid-groups" aria-label="Latest properties">
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Studio — BKK1</h3>
-                    <div class="card-top__meta">$250 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Condo — Chroy Changvar</h3>
-                    <div class="card-top__meta">$560 / month</div>
-                </div>
-            </article>
-            <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
-                <div class="card-top__body">
-                    <h3 class="card-top__title">Townhouse — Russey Keo</h3>
-                    <div class="card-top__meta">$120,000</div>
-                </div>
-            </article>
-        </div>
-    </section>
+ 
 
     <!-- ===== Meet Our Agents (Top 3) ===== -->
     <section class="section container">

@@ -5,7 +5,8 @@ fetch("../../public/data/properties.json")
   .then((data) => {
     if (data.length > 0) {
       console.log(data);
-      for (let i = 0; i < 4; i++) {
+      
+      for (let i = 0; i < data.length; i++) {
         sectionPropertiesElement.innerHTML += `
         <a class="card" href="/pages/property/${data[i].title.km}">
            <img class="card__media" src="${data[i].images}"
