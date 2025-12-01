@@ -7,6 +7,7 @@
 
 .card {
   flex: 0 0 22em;
+  display: flex;
   background: var(--surface);
   /* border: 1px solid var(--line); */
   border-radius: var(--radius);
@@ -24,6 +25,11 @@
 }
 .card__body span{
   color:white;
+  font-size: 15px;
+  justify-content: center;
+  display: flex; 
+  width: 80px;
+
 }
 .card__title {
   margin: 0 0 6px;
@@ -36,6 +42,18 @@
 
 .card__tion{
   font-size: 15px;
+}
+.card__icon i{
+  font-size: 22px;
+ 
+}
+
+.badge span{
+}
+
+
+.badge{
+  width: 80px;
 }
 .card__meta {
   font-size: 0.9rem;
