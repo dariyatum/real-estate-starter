@@ -12,7 +12,6 @@
     background-color: var(--surface);
  } 
   .footer {
-    max-width: 768px;
     margin: auto;
     background: var(--accent);
     color: #fff;
