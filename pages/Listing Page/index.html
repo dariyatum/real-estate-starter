@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>KH Realty — Find Homes in Cambodia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Affordable rentals and homes in Cambodia." />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/components/nav.css">
+    <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/general.css">
+
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+</head>
+
+<body> 
+    <div class="container" style="padding: 0;"> 
+    <!-- ===== NAV ===== -->
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
+            <a class="nav__brand" href="/">KH Realty</a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+        </div>
+        <ul class="nav__list container" id="navList">
+            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+   
+
+
+    <!-- ===== HERO: Search & Filter ===== -->
+    <header class="hero container">
+          <div class="hero__card">
+             <form class="hero__form" action="#" role="search">
+                <select aria-label="Purpose" id="selectPurpose">
+                    <option>Rent</option>
+                    <option>Buy</option>
+                </select>
+                <select aria-label="Type" id="selectType">
+                   
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
+                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+            </form></div>
+
+          
+          <div id="listings" class="listing" 
+          style="display: block;
+                gap: 1rem;
+                margin-top: 20px;"></div>
+
+            <div class="show-pagination">
+                
+            </div>
+
+ 
+
+        </div>
+        </div>
+    </header>
+
+   
+
+   
+        
+
+    
+         
+    <script>
+        // Mobile nav toggle
+        const nav = document.querySelector('.nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle?.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', String(open));
+            console.log(String(open));
+        });
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+    </script>
+
+    
+    <script src="index.js"></script>
+    <script src="/scripts/scroller.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,9 @@
 }
 
 .card {
-  flex: 0 0 22em;
+  width: 100%;
+  display: flex;
+  /* flex: 0 0 22em; */
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -14,14 +16,17 @@
 }
 
 .card__media {
-  aspect-ratio: 16/10;
+  width: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
 .card__body {
   padding: 12px;
 }
-
+.card__body span{
+  color:white;
+}
 .card__title {
   margin: 0 0 6px;
   font-size: 1rem;

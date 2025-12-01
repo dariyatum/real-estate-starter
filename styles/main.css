@@ -14,7 +14,7 @@
 
   --line: #e9e2db;
 
-  --badge: #FF0000;
+  --badge: #14AE5C;
 
   --radius: 14px;
 
@@ -64,10 +64,10 @@ img {
 
 .hero__card {
   background:var(--backgroud-card);
-  border: 1px solid  var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 18px;
+  padding: 8px;
+  
 }
 
 .hero__title {
@@ -83,6 +83,9 @@ img {
 .hero__form {
   display: grid;
   gap: 10px;
+  width:328px;
+
+  display: flex;
 }
 
 .hero__row {
