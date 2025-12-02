@@ -92,6 +92,7 @@ fetch("/public/data/properties.json")
   .then((data) => {
     if (data.length > 0){
       for(let i= 5; i<6; i++){
+        console.log(data[1]);
         latestPropertiesElement2.innerHTML += `
         <article class="card-top card-top__latest-properties-short" style="position:relative;">
              <span style="background-color: red; padding: 3px;color: white; border-radius: 10px; position:absolute; z-index:1; left:10px; top:10px;">feature</span>
@@ -110,10 +111,13 @@ fetch("/public/data/properties.json")
                 </div>
             </article>
 
-        `
+        `;
       }
     }
-  })
+  });
+
+
+
 
 
 
