@@ -7,7 +7,8 @@
 
     --backgroud-card:#E8E8E8;
   
-    --border:0.2px solid #A5A5A5;
+    --border:0.2px solid #A5A5A5; 
+  }
  body{
     background-color: var(--surface);
  } 
