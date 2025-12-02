@@ -6,8 +6,8 @@ fetch("/public/data/agents.json")
         if (data.length > 0){
             for (let i = 0; i < 8; i++){
                 sectionAgentsElement.innerHTML += `
-                <div class="agents__artist-card">
-                    <div class="agents__card-image">
+                <div class="agents__artist-card agent__cart">
+                    <div class="agents__card-image ">
                         <img class="agents__card-image-img" src="${data[i].profile_photo}" alt="Artist Image">
                     </div>
                     <div class="agents__card-content">

@@ -1,17 +1,18 @@
 
 .contact__page{
-    background-color: bisque;
+    background-color: rgba(232, 232, 232, 1);
     border-radius: 10px;
     padding: 10px;
 }
 .contact__p{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
     border-radius: 10px;
 }
 .contact__contact{
-    width: 800px;
+    max-width: 800px;
+    width: 80%;
     border-top-width: 10px;
 
 }
@@ -41,7 +42,10 @@
     cursor: pointer;
     text-align: center;
   }
-
+  .contact__contact{
+    max-width: 800px;
+    width: 80%;
+  }
   button:hover {
     opacity: 0.8;
   }
