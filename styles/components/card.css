@@ -33,7 +33,7 @@
 }
 .card__title {
   margin: 0 0 6px;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
 .card__location{
@@ -41,21 +41,26 @@
 }
 
 .card__tion{
-  font-size: 15px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.card__icon{
+  font-size: 20px;
 }
 .card__icon i{
   font-size: 22px;
- 
 }
 
-.badge span{
-}
+
 
 
 .badge{
   width: 80px;
 }
 .card__meta {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   color: var(--muted);
+  font-size: 18px;
+  margin-left: 30px;
 }
