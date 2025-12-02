@@ -1,0 +1,38 @@
+/* HEADER BAR */
+.header {
+    width: 100%;
+    background: #e6e6e6;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.container{
+    padding: 10px;
+}
+
+/* BACK BUTTON + HOME */
+.header__back {
+    display: flex;
+    justify-content: left;
+    gap: 1px;
+}
+
+.header__arrow {
+    font-size: 20px;
+    color: #41ff00; /* neon green */
+}
+
+.header__home-text {
+    font-size: 20px;
+    color: #41ff00;
+    font-weight: 500;
+}
+
+/* MAIN TITLE */
+.header__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;    
+}

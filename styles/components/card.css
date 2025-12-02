@@ -6,13 +6,15 @@
 }
 
 .card {
-  flex: 0 0 22em;
+  flex: 0 0 em;
   display: flex;
+  flex-direction: column;
   background: var(--surface);
   /* border: 1px solid var(--line); */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
+
 
 .card__media {
   width: 350px;

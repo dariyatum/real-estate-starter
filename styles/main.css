@@ -244,6 +244,13 @@ img {
   font-size: 0.95rem;
   margin: 0;
 }
+.title{
+  font-size: 20px;
+  color: var(--text);
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+}
 
 .quote__name {
   margin-top: 8px;
