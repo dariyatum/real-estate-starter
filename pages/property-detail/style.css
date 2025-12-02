@@ -273,12 +273,13 @@ body{
     }
 
     .profile-img {
-        width: 130px;
-        height: 130px;
+        margin-left: 10px ;
+        width: 100px;
         object-fit: cover;
         border-radius: 8px;
         border: 2px solid #ddd;
     }
+
 
     .info {
         flex-grow: 1;
@@ -315,5 +316,5 @@ body{
 
     .btn:hover {
         background: #e2e2e2;
-
+        
     }
