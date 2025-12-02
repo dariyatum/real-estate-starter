@@ -311,6 +311,7 @@ body {
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: lightgray;
 }
 
 .property-details h2 {
