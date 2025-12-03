@@ -17,30 +17,87 @@
     <link rel="stylesheet" href="/styles/components/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/pages/side-bar/index.css">
 </head>
 <body>
 
       <!-- ===== NAV ===== -->
-    <nav class="nav" aria-label="Primary">
+       <a href="#"><nav class="nav" aria-label="Primary">
         <div class="nav__bar container">
             <img src="/../../Image/Frame 296.png" alt="" class="nav__brand">
             <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="/../../Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
         </div>
+        
         <ul class="nav__list container" id="navList">
             <li class="nav__item"><a class="nav__link" href="pages/rent/index.html">Rent</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/buy/index.html">Buy</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/about/index.html">About</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/agents/index.html">Agents</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/contact/index.html">Contact</a></li>
-        </ul>
+             <div class="sidebar">
+    <nav class="menu">
+        <a href="#" class="menu-item active">
+            <i class="fa-solid fa-house"></i> Home
+        </a>
+
+        <a href="#" class="menu-item nav__item">
+            <i class="fa-solid fa-house-lock"></i> Rent
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-basket-shopping"></i> Buy
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-user"></i> Agents
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-regular fa-circle-exclamation"></i> About
+        </a>
+
+        <a href="#" class="menu-item">
+           <i class="fa-solid fa-comment"></i> Contact
+        </a>
     </nav>
-    
+
+    <div class="darkmode-section">
+        <i class="fa-solid fa-moon icon"></i>
+        <span>Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>  
+        </ul>
+        
+    </nav></a>
+     <script>
+        // Mobile nav toggle
+        const nav = document.querySelector('.nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle?.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', String(open));
+            console.log(String(open));
+        });
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+    </script>
     <section class="yayy__emoji container">
         <img class="yayy__emoji-image" src="/Image/Emoji Message.png" alt="">
         <h1 class="yayy__emoji-title">Woo hoo!!</h1>
         <span class="yayy__emoji-text">Congrats! we have successfully sent your message.</span>
         <a href="/../../index.html"><button class="yayy__emoji-btn">Back</button></a>
     </section>
-
+        <script src="/../../scripts/index.js"></script>
 </body>
 </html>

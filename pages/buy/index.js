@@ -8,7 +8,7 @@ fetch("../../public/data/properties.json")
       
       for (let i = 0; i < data.length; i++) {
         sectionPropertiesElement.innerHTML += `
-               <a class="card" href="/pages/property/${data[i].title.en}">
+               <a class="card" href="/../../pages/property-detail/index.html">
             <img class="card__media" src="${data[i].images}"
                 alt="${data[i].title.en}" />
             <div class="card__body">

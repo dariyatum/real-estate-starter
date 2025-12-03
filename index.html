@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="styles/components/long and short card.css">
     <link rel="stylesheet" href="/styles/sticky.css">
     <link rel="stylesheet" href="/styles/agents.css">
+    <link rel="stylesheet" href="pages/side-bar/index.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
     <link rel="stylesheet" href="/styles/components/footer">
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/components/footer.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body class="darkmode">
+<body class="darkmod">
 
     <!-- ===== NAV ===== -->
     <a href="#"><nav class="nav" aria-label="Primary">
@@ -31,24 +33,60 @@
             <img src="Image/Frame 296.png" alt="" class="nav__brand">
             <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
         </div>
+        
         <ul class="nav__list container" id="navList">
             <li class="nav__item"><a class="nav__link" href="pages/rent/index.html">Rent</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/buy/index.html">Buy</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/about/index.html">About</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/agents/index.html">Agents</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/contact/index.html">Contact</a></li>
-            <li class="nav__link"><a href=""><button class="dark-mode">mode </button></a></li>
+             <div class="sidebar">
+    <nav class="menu">
+        <a href="index.html" class="menu-item active">
+            <i class="fa-solid fa-house"></i> Home
+        </a>
+
+        <a href="pages/rent/index.html" class="menu-item nav__item">
+            <i class="fa-solid fa-house-lock"></i> Rent
+        </a>
+
+        <a href="pages/buy/index.html" class="menu-item">
+            <i class="fa-solid fa-basket-shopping"></i> Buy
+        </a>
+
+        <a href="pages/agents/index.html" class="menu-item">
+            <i class="fa-solid fa-user"></i> Agents
+        </a>
+
+        <a href="pages/about/index.html" class="menu-item">
+            <i class="fa-regular fa-circle-exclamation"></i> About
+        </a>
+
+        <a href="pages/contact/index.html" class="menu-item">
+           <i class="fa-solid fa-comment"></i> Contact
+        </a>
+    </nav>
+
+    <div class="darkmode-section">
+        <i class="fa-solid fa-moon icon"></i>
+        <span>Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>  
         </ul>
+        
     </nav></a>
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
         <div class="hero__container">
-            <h1 class="hero__container--title">The Most Trusted and <br>
-                 Effective <br>
-            Real Estate Partner <br>
-            in Cambodia!</h1>
-            <img class="hero__card--image" src="Image/Frame 1 (2).png" alt="">
+            <h1 class="hero__container--title"> <br>
+              
+          </h1>
+            <img class="hero__card--image" src="Image/Frame 310.png" alt="">
             <div class="hero__container--search-bar">
                 <div class="hero__card--search-relative">
                     <input class="hero__container--input" type="search" style="color: white; font-size: 20px;" placeholder="search">
@@ -59,7 +97,7 @@
     </header>
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
-    <a href="/pages/property-detail/index.html"><section class="section container" style="background-color: #EBEBEB; border-radius: 10px; border: 0.2px solid grey;">
+    <a href="/pages/property-detail/index.html"><section class="section container">
         <div class="section__head">
             <h2 class="section__title">Latest Properties</h2>
         </div>

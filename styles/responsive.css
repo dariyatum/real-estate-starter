@@ -31,7 +31,16 @@
     .nav__toggle{
         display: none;
     }
-}
+    .agent-card{
+        width: 49%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .nav__item{
+        display: block;
+    }
+
 @media screen and (max-width:375px) {
     
     .container{
@@ -43,6 +52,9 @@
         margin: 1%;
         margin-bottom: 20px;
     }
+    .agent-card{
+        width:100%;
+    }
     .pagination{
         justify-content: center;
     }
@@ -50,13 +62,18 @@
         margin-left: 40px;
         margin-bottom: 15px;
     }
+    .view-btn{
+        margin: auto;
+    }
     .agents-container {
         display: block;
         max-width: 375px;
         width: 100%;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
     .agent-card{
-        width: 10%;
+        width: 100%;
     }
 }

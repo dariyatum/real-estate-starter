@@ -1,13 +1,58 @@
-/* Sidebar full width for screens <= 768px */
-@media (max-width: 768px) {
+:root {
+  /* Nude + Luxury palette */
+  --bg: #f6f2ee;
+
+  --surface: #F4F6F0;
+
+  --text: #1d1b16;
+
+  --muted: #7a736b;
+
+  --accent: #14AE5C;
+
+  --accent-600: #9f7c41;
+
+  --line: #e9e2db;
+
+  --badge: #14AE5C;
+
+  --color: #E8E8E8;
+
+  --radius: 14px;
+
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+
+  --maxw: 640px;
+
+  --font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial;
+
+  --backgroud-card:#E8E8E8;
+
+  --bgsection:#EBEBEB;
+
+    --border-radius:10px;
+
+  --icon:#14AE5C;
+
+  --border:0.2px solid rgb(207, 207, 207);
+
+  --txtwhite:#fff;
+
+  --txtblack:#000;
+  
+
+}
+
+
+
+
     .sidebar {
         width: 100%;
     }
-}
-
 .sidebar {
-    width: 350px;
-    background: #fff;
+    width: 100%;
+    background:var(--surface) ;
     padding: 20px;
     min-height: 100vh;
     box-sizing: border-box;

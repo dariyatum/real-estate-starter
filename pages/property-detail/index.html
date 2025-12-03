@@ -20,21 +20,79 @@
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/components/footer.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/../../pages/side-bar/index.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="pages/side-bar/index.css">
     <link rel="stylesheet" href="/styles/components/long and short card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="container">
-      <div class="header container">
+       <a href="#"><nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
+            <img src="/../../Image/Frame 296.png" alt="" class="nav__brand">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="/../../Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
+        </div>
+        
+        <ul class="nav__list container" id="navList">
+            <li class="nav__item"><a class="nav__link" href="pages/rent/index.html">Rent</a></li>
+            <li class="nav__item"><a class="nav__link" href="/pages/buy/index.html">Buy</a></li>
+            <li class="nav__item"><a class="nav__link" href="/pages/about/index.html">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="/pages/agents/index.html">Agents</a></li>
+            <li class="nav__item"><a class="nav__link" href="/pages/contact/index.html">Contact</a></li>
+             <div class="sidebar">
+    <nav class="menu">
+        <a href="#" class="menu-item active">
+            <i class="fa-solid fa-house"></i> Home
+        </a>
+
+        <a href="#" class="menu-item nav__item">
+            <i class="fa-solid fa-house-lock"></i> Rent
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-basket-shopping"></i> Buy
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-solid fa-user"></i> Agents
+        </a>
+
+        <a href="#" class="menu-item">
+            <i class="fa-regular fa-circle-exclamation"></i> About
+        </a>
+
+        <a href="#" class="menu-item">
+           <i class="fa-solid fa-comment"></i> Contact
+        </a>
+    </nav>
+
+    <div class="darkmode-section">
+        <i class="fa-solid fa-moon icon"></i>
+        <span>Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+</div>  
+        </ul>
+        
+    </nav></a>
+
+
+
+
+      <!-- HEADER -->
+
+<div class="header container">
         <div class="header__container">
         <div class="header__back">
             <span class="header__arrow">&lt;</span>
             <a href="/../../"><span class="header__home-text">Home</span></a>
-            <div class="header-color-head"></div>
         </div>
-        </div>
+      </div>
       <div class="picture-section">
         <div class="picture-1">
           <img src="/Image/section1.png" alt="" />
@@ -272,5 +330,7 @@
     <a class="footer__icons-media" href="#"><i class="fa-brands "></div>
       </div>
     <script src="index.js"></script>
+    <script src="/../../scripts/index.js"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>
