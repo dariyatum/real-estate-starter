@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="/styles/components/card.css">
     <link rel="stylesheet" href="/styles/components/card-top.css">
     <link rel="stylesheet" href="/styles/components/general.css">
-
+    <link rel="stylesheet" href="/styles/components/pagination.css">
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
-
+    <link rel="stylesheet" href="/styles/components/footer.css">
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    
+
 </head>
 
 <body> 
@@ -41,15 +40,22 @@
     </nav>
     <div class="section">
         <div class="hero-section">
-            <p style="font-size: 15px;">Home</p>
+
+            <span style="color: #14AE5C;"  stclass="header__arrow">&lt;</span>
+            <a href=""><span style="color: #14AE5C;" class="header__home-text">Home</span></a>
             <h1 style="font-size: 18px;">Property list</h1>
             <div class="hero-sections">
-                <button class="btn" type="submit" >FOR RENT</button>
-                 <button class="btn" type="submit">FOR SALE</button>
+                <a href="/pages/rent/index.html"><button class="btn" type="submit" >FOR RENT</button></a>
+                <a href="#"><button class="btn" type="submit">FOR SALE</button></a>
             </div>
         </div>
     </div>
-
+    
+    <div class="buy">
+        <div class="buy-buy">
+            <h1>Real Estate for Sale in Cambodia</h1>
+        </div>
+    </div>
     
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
@@ -58,10 +64,12 @@
                 <select aria-label="Purpose" id="selectPurpose" >
                     <option>Room</option>
                     <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Condo</option>
                     <option>House</option>
                 </select>
                 <select aria-label="Type" id="selectType">
-                   
+                   <option>Phnom Penh</option>
                     <option>Kur Srov</option>
                     <option>Mean Chey</option>
                     <option> Tul PongRor</option>
@@ -72,29 +80,82 @@
             </form></div>
 
           
-          <div id="listings" class="listing" 
+          <div id="listings" class="listing container" 
           style="display: block;
                 gap: 1rem;
                 margin-top: 20px;"></div>
 
-            <div class="show-pagination">
-                <div class="hero-pagination"></div>
-            </div>
 
+    <!-- <nav class="pagination container" style="width: 300px;">
+        <a href=""><button class="nav-btn">Back</button></a>
+        <div class="pages">
+            <a href=""><span class="page active">1</span></a>
+            <a href=""><span class="page">2</span></a>
+            <a href=""><span class="page">3</span></a>
+            <a href=""><span class="page">4</span></a>
+            <a href=""><span class="page">5</span></a>
+        </div>
+        <a href=""><button class="nav-btn">Next</button></a>
+    </nav> -->
+
+       
+
+
+<div class="footer">
+
+  <!-- Top Section -->
+  <div class="footer__top">
+    <!-- Discover -->
+    <div class="footer__section">
+      <a class="footer__title">Discover</a>
+      <a class="footer__title-menu" href="#">House for sales</a>
+      <a class="footer__title-menu" href="#">Condo</a>
+      <a class="footer__title-menu" href="#">Borey</a>
+      <a class="footer__title-menu" href="#">Villa</a>
+      <a href="#">Apartment</a>
+      <a class="footer__title-menu" href="#">Commercial</a>
+      <a class="footer__title-menu" href="#">Land of sale</a>
+      <a class="footer__title-menu" href="#">Shop house for sale</a>
+    </div>
+
+    <!-- Area -->
+    <div class="footer-section">
+      <a class="footer__title">Area</a>
+      <a class="footer__title-menu" href="#">Boeung Keng</a>
+      <a class="footer__title-menu" href="#">Kang</a>
+      <a class="footer__title-menu" href="#">Chamkarmon</a>
+      <a class="footer__title-menu" href="#">Tuol Kouk</a>
+      <a class="footer__title-menu" href="#">Daun Penh</a>
+      <a class="footer__title-menu" href="#">Mean Chey</a>
+      <a class="footer__title-menu" href="#">7 Makara</a>
+    </div>
+
+    <!-- Contact Us (spans both columns on small screens if needed) -->
+    <div class="footer-section" style="grid-column: span 2; margin-top: 12px;">
+      <a class="footer__title">Contact Us</a>
+      <a class="footer__title-menu" href="#">66A, Sihanouk Blvd, Phnom Penh, Cambodia</a>
+      <a class="footer__title-menu" href="https://applekhrealestate.com" target="_blank">applekhrealestate.com</a>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer__icons">
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer__bottom">
+    © Apple KH real estate - All Rights Reserved
+  </div>
+
+</div>
  
-
         </div>
         </div>
-        
-        <div class="box1">
-
-
-        </div>
-
-
-
-
-
     </header>
 
    

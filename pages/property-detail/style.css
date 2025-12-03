@@ -1,6 +1,7 @@
 body {
   background-color: #ffffff;
   color: black;
+  font-family: Arial, sans-serif;
 }
 
 .container {
@@ -169,10 +170,10 @@ body {
   width: 100%;
   box-sizing: border-box;
   margin-top: 15px;
-}
+  font-size: 14px;}
 
-.address-box h2 {
-  font-size: 16px;
+.address-section h2 {
+  font-size: 1px;
 }
 
 .address-content {
@@ -197,9 +198,8 @@ body {
 }
 
 .value {
-  font-size: 10px;
-  font-weight: 500;
-  color: #000;
+  font-size: 1px;
+  color: #444;
 }
 
 .info-agency {
@@ -311,6 +311,7 @@ body {
   text-align: center;
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: lightgray;
 }
 
 .property-details h2 {
@@ -344,4 +345,38 @@ body {
 .label {
   font-size: 14px;
   color: #777;
+}
+
+.contact-form {
+  background-color: lightgray;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
 }
