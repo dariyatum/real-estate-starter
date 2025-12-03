@@ -74,11 +74,11 @@
  
 .buy-buy{
     width: 90%;
-   
+    margin-top: 10px;
     /* background-color: rgb(196, 72, 72); */
 }
 
 .buy-buy h1{
-    font-size: 20px;
+    font-size: 18px;
     
 }
