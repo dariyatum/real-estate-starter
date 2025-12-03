@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>KH Realty — Find Homes in Cambodia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Affordable rentals and homes in Cambodia." />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/sticky.css">
+    <link rel="stylesheet" href="/styles/components/nav.css">
+    <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/general.css">
+    <link rel="stylesheet" href="/styles/components/pagination.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="/styles/components/footer.css">
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+<body> 
+    <div class="container" style="padding: 0;"> 
+    <!-- ===== NAV ===== -->
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
+            <a class="nav__brand" href="/">KH Realty</a>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle">Menu</button>
+        </div>
+        <ul class="nav__list container" id="navList">
+            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="section">
+        <div class="hero-section">
+            <span style="color: #14AE5C;"  stclass="header__arrow">&lt;</span>
+            <a href="/index.html"><span style="color: #14AE5C;" class="header__home-text">Home</span></a>
+            <h1 style="font-size: 18px;">Property list</h1>
+            <div class="hero-sections">
+                <a href="/pages/rent/index.html"><button class="btn" type="submit" >FOR RENT</button></a>
+                 <a href="/pages/buy/index.html"><button class="btn" type="submit">FOR SALE</button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero__container">
+            <h1 class="hero__container--title">The Most Trusted and <br>
+                 Effective <br>
+                Real Estate Partner <br>
+                in Cambodia!</h1>
+            <img class="hero__card--image" src="/Image/Frame 1 (2).png" alt="">
+            <div class="hero__container--search-bar">
+                <div class="hero__card--search-relative">
+                    <input class="hero__container--input" type="search" style="color: white; font-size: 20px;" placeholder="search">
+                    <a><img class="hero__card--search-icon" src="/Image/search-bar.svg" alt=""></a>
+                </div>
+            </div>
+        </div>  
+
+        
+    
+    <!-- ===== HERO: Search & Filter ===== -->
+    <header class="hero container">
+          <div class="hero__card">
+             <form class="hero__form" action="#" role="search">
+                <select aria-label="Purpose" id="selectPurpose" >
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>Villa</option>
+                    <option>Condo</option>
+                    <option>House</option>
+                </select>
+                <select aria-label="Type" id="selectType">
+                    <option>Phnom Penh</option>
+                    <option>Kur Srov</option>
+                    <option>Mean Chey</option>
+                    <option> Tul PongRor</option>
+                    <option>Tul Kok</option>
+                    <option>Dangkoa</option>
+                </select>
+                <input class="hero__input" type="number" placeholder="Price" aria-label="price" />
+            </form></div>
+
+          
+          <div id="listings" class="listing container" 
+          style="display: block;
+                gap: 1rem;
+                margin-top: 20px;"></div>
+
+
+    <nav class="pagination container" style="width: 300px;">
+        <a href=""><button class="nav-btn">Back</button></a>
+        <div class="pages">
+            <a href="#"><span class="page active" style=" color: green; font-weight: bold; opacity: 1;" >1</span></a>
+            <a href="/pages/Listing Page/indexs.css"><span class="page">2</span></a>
+            <a href=""><span class="page">3</span></a>
+            <a href=""><span class="page">4</span></a>
+            <a href=""><span class="page">5</span></a>
+        </div>
+        <a href=""><button class="nav-btn">Next</button></a>
+    </nav>
+
+       
+
+
+<div class="footer">
+
+  <!-- Top Section -->
+  <div class="footer__top">
+    <!-- Discover -->
+    <div class="footer__section">
+      <a class="footer__title">Discover</a>
+      <a class="footer__title-menu" href="#">House for sales</a>
+      <a class="footer__title-menu" href="#">Condo</a>
+      <a class="footer__title-menu" href="#">Borey</a>
+      <a class="footer__title-menu" href="#">Villa</a>
+      <a href="#">Apartment</a>
+      <a class="footer__title-menu" href="#">Commercial</a>
+      <a class="footer__title-menu" href="#">Land of sale</a>
+      <a class="footer__title-menu" href="#">Shop house for sale</a>
+    </div>
+
+    <!-- Area -->
+    <div class="footer-section">
+      <a class="footer__title">Area</a>
+      <a class="footer__title-menu" href="#">Boeung Keng</a>
+      <a class="footer__title-menu" href="#">Kang</a>
+      <a class="footer__title-menu" href="#">Chamkarmon</a>
+      <a class="footer__title-menu" href="#">Tuol Kouk</a>
+      <a class="footer__title-menu" href="#">Daun Penh</a>
+      <a class="footer__title-menu" href="#">Mean Chey</a>
+      <a class="footer__title-menu" href="#">7 Makara</a>
+    </div>
+
+    <!-- Contact Us (spans both columns on small screens if needed) -->
+    <div class="footer-section" style="grid-column: span 2; margin-top: 12px;">
+      <a class="footer__title">Contact Us</a>
+      <a class="footer__title-menu" href="#">66A, Sihanouk Blvd, Phnom Penh, Cambodia</a>
+      <a class="footer__title-menu" href="https://applekhrealestate.com" target="_blank">applekhrealestate.com</a>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer__icons">
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer__bottom">
+    © Apple KH real estate - All Rights Reserved
+  </div>
+
+</div>
+ 
+        </div>
+        </div>
+    </header>
+
+   
+
+   
+        
+
+    
+         
+    <script>
+        // Mobile nav toggle
+        const nav = document.querySelector('.nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle?.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', String(open));
+            console.log(String(open));
+        });
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+    </script>
+
+    
+    <script src="index.js"></script>
+    <script src="/scripts/scroller.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

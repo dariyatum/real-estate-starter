@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>KH Realty — Find Homes in Cambodia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Affordable rentals and homes in Cambodia." />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/components/nav.css">
+    <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/card.css">
+    <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/general.css">
+    <link rel="stylesheet" href="styles/components/long and short card.css">
+    <link rel="stylesheet" href="/styles/sticky.css">
+    <link rel="stylesheet" href="/styles/agents.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="/styles/components/footer">
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/components/footer.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+
+<body>
+
+    <!-- ===== NAV ===== -->
+    <a href="#"><nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
+            <img src="Image/Frame 296.png" alt="" class="nav__brand">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
+        </div>
+        <ul class="nav__list container" id="navList">
+            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+        </ul>
+    </nav></a>
+
+    <!-- ===== HERO: Search & Filter ===== -->
+    <header class="hero container">
+        <div class="hero__container">
+            <h1 class="hero__container--title">The Most Trusted and <br>
+                 Effective <br>
+            Real Estate Partner <br>
+            in Cambodia!</h1>
+            <img class="hero__card--image" src="Image/Frame 1 (2).png" alt="">
+            <div class="hero__container--search-bar">
+                <div class="hero__card--search-relative">
+                    <input class="hero__container--input" type="search" style="color: white; font-size: 20px;" placeholder="search">
+                    <a><img class="hero__card--search-icon" src="Image/search-bar.svg" alt=""></a>
+                </div>
+            </div>
+        </div>  
+        
+        <!-- <div class="hero__card">
+            <h1 class="hero__title">Find your next home</h1>
+            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
+            <form class="hero__form" action="#" role="search">
+                <select aria-label="Purpose" id="selectPurpose">
+                    <option>Rent</option>
+                    <option>Buy</option>
+                </select>
+                <select aria-label="Type" id="selectType">
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
+                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
+                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+                <button class="hero__btn" type="submit">Search</button>
+            </form>
+        </div> -->
+    </header>
+
+    <!-- ===== Featured Properties (Horizontal) ===== -->
+    <section class="section container" style="background-color: #EBEBEB; border-radius: 10px; border: 0.2px solid grey;">
+        <div class="section__head">
+            <h2 class="section__title">Featured Properties</h2>
+        </div>
+     <div id="section__properties" style="display: flex; gap: 1rem;"></div>
+    </section>
+       <!-- ===== Latest Properties (Horizontal) ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Latest Properties</h2>
+          
+        </div>
+        <div class="section contianer latest-main" id="Latest-Properties" aria-label="Latest properties">
+
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+              <div class="section contianer latest-main" id="Latest-Properties2" aria-label="Latest properties">
+
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+    </section>
+
+    <!-- ===== Property Categories (Horizontal) ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Property Categories</h2>
+
+        </div>
+         <article class="card-top">
+            <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Condo</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Apartment</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">House</span>
+            </div>
+                <div class="card-top__media card-top__media-cate">
+                <img src="/Image/apartment_24dp_14AE5C_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="card-top__icon">
+                <span class="card-top__titleInner">Villa</span>
+            </div>  
+            <a class="section__link" href="#">Show More</a>   
+        </article>
+    </section>
+
+    <!-- AGENTS FEW -->
+
+
+
+    <div class="agents-container container">
+  <div class="agent-card">
+    <img src="agent.jpg" class="agent-img" alt="">
+    <h3 class="agent-name">Tum Dariya</h3>
+    <p class="agent-desc">
+      Hi, I'm Agent1, your local real estate expert in Phnom Penh. I specialize in residential...
+    </p>
+    <button class="view-btn">View profile</button>
+  </div>
+
+  <div class="agent-card">
+    <img src="agent.jpg" class="agent-img" alt="">
+    <h3 class="agent-name">Tum Dariya</h3>
+    <p class="agent-desc">
+      Hi, I'm Agent1, your local real estate expert in Phnom Penh. I specialize in residential...
+    </p>
+    <button class="view-btn">View profile</button>
+  </div>
+
+  <div class="agent-card">
+    <img src="agent.jpg" class="agent-img" alt="">
+    <h3 class="agent-name">Tum Dariya</h3>
+    <p class="agent-desc">
+      Hi, I'm Agent1, your local real estate expert in Phnom Penh. I specialize in residential...
+    </p>
+    <button class="view-btn">View profile</button>
+  </div>
+
+  <div class="agent-card">
+    <img src="agent.jpg" class="agent-img" alt="">
+    <h3 class="agent-name">Tum Dariya</h3>
+    <p class="agent-desc">
+      Hi, I'm Agent1, your local real estate expert in Phnom Penh. I specialize in residential...
+    </p>
+    <button class="view-btn">View profile</button>
+  </div>
+  <a href="" class="view-btn" style="padding: 2px 5px ; margin: auto;">view more</a>
+</div>
+
+
+<!-- Inquiry -->
+
+
+<p class="discription__p"> Inguiry</p>
+<div class="inquiry-form container erer">
+    <h3>Inquiry Form</h3>
+
+    <label>Inquiry type</label>
+    <select>
+        <option value="">select</option>
+    </select>
+
+    <h4>Information</h4>
+    <select>
+        <option>I’m a</option>
+    </select>
+
+    <div class="two-col">
+        <input type="text" placeholder="First name">
+        <input type="text" placeholder="Last name">
+    </div>
+
+    <input type="email" placeholder="Email Address">
+
+    <h4>Location</h4>
+    <div class="twoo-col">
+        <select>
+            <option>Select</option>
+        </select>
+        <input type="text" placeholder="Area">
+    </div>
+
+    <h4>Property</h4>
+    <select>
+        <option>select</option>
+    </select>
+
+    <div class="twoo-col">
+        <input type="text" placeholder="Max price">
+        <input type="text" placeholder="Min size (m)">
+    </div>
+
+    <div class="twoo-col">
+        <input type="text" placeholder="Beds">
+        <input type="text" placeholder="Baths">
+    </div>
+
+    <label class="checkbox">
+        <input type="checkbox"> I consent to having this website store my submitted information
+    </label>
+
+    <button class="submit-btn">Submit</button>
+</div>
+
+
+
+<!-- Testimonials -->
+
+   <section class="testimonials">
+  <h2 class="discription__p">Testimonials</h2>
+
+  <div class="testimonials-container container">
+
+    <div class="testimonial-card">
+      <p>
+        As a first-time homebuyer, I was nervous about the process. CENTURY 21
+        made it seamless and stress-free. Their expertise and understanding of
+        the Cambodian property market were invaluable.
+      </p>
+      <div class="profile">
+        <img src="avatar1.png" alt="Avatar">
+        <div>
+          <h4>Andreea</h4>
+          <span>Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        Since encountering this team, the process of finding my dream home has
+        never been smoother. Their professionalism and attention to detail are
+        impressive!
+      </p>
+      <div class="profile">
+        <img src="avatar1.png" alt="Avatar">
+        <div>
+          <h4>Andreea</h4>
+          <span>Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        This is the best real estate team I’ve encountered! Their market
+        insights and personalized service made the entire buying process easy.
+      </p>
+      <div class="profile">
+        <img src="avatar1.png" alt="Avatar">
+        <div>
+          <h4>Andreea</h4>
+          <span>Manager</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card">
+      <p>
+        As a first-time homebuyer, I was nervous about the process. CENTURY 21
+        made it seamless and stress-free. Their expertise and understanding of
+        the Cambodian property market were invaluable.
+      </p>
+      <div class="profile">
+        <img src="avatar1.png" alt="Avatar">
+        <div>
+          <h4>Andreea</h4>
+          <span>Manager</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+ <!-- FOOTER -->
+
+
+<div class="footer">
+
+  <!-- Top Section -->
+  <div class="footer__top">
+    <!-- Discover -->
+    <div class="footer__section">
+      <a class="footer__title">Discover</a>
+      <a class="footer__title-menu" href="#">House for sales</a>
+      <a class="footer__title-menu" href="#">Condo</a>
+      <a class="footer__title-menu" href="#">Borey</a>
+      <a class="footer__title-menu" href="#">Villa</a>
+      <a href="#">Apartment</a>
+      <a class="footer__title-menu" href="#">Commercial</a>
+      <a class="footer__title-menu" href="#">Land of sale</a>
+      <a class="footer__title-menu" href="#">Shop house for sale</a>
+    </div>
+
+    <!-- Area -->
+    <div class="footer-section">
+      <a class="footer__title">Area</a>
+      <a class="footer__title-menu" href="#">Boeung Keng</a>
+      <a class="footer__title-menu" href="#">Kang</a>
+      <a class="footer__title-menu" href="#">Chamkarmon</a>
+      <a class="footer__title-menu" href="#">Tuol Kouk</a>
+      <a class="footer__title-menu" href="#">Daun Penh</a>
+      <a class="footer__title-menu" href="#">Mean Chey</a>
+      <a class="footer__title-menu" href="#">7 Makara</a>
+    </div>
+
+    <!-- Contact Us (spans both columns on small screens if needed) -->
+    <div class="footer-section" style="grid-column: span 2; margin-top: 12px;">
+      <a class="footer__title">Contact Us</a>
+      <a class="footer__title-menu" href="#">66A, Sihanouk Blvd, Phnom Penh, Cambodia</a>
+      <a class="footer__title-menu" href="https://applekhrealestate.com" target="_blank">applekhrealestate.com</a>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer__icons">
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer__bottom">
+    © Apple KH real estate - All Rights Reserved
+  </div>
+
+</div>
+    <script>
+        // Mobile nav toggle
+        const nav = document.querySelector('.nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle?.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', String(open));
+            console.log(String(open));
+        });
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+    </script>
+
+    <script src="/scripts/scroller.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

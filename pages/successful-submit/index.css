@@ -1,0 +1,37 @@
+
+:root{
+    --accent: #14AE5C;
+}
+
+
+.yayy__emoji{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.yayy__emoji-image{
+    max-width: 640px;
+    width: 70%;
+    object-fit: fill;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.yayy__emoji-title{
+    font-size: 40px;
+    
+}
+.yayy__emoji-text{
+    color: grey;
+    font-size: 20px;
+}
+.yayy__emoji-btn{
+    background-color:var(--accent);
+    color: white;
+    font-size: 25px;
+    padding: 2px 8px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+}

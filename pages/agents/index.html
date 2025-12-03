@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/../../styles/main.css">
+    <link rel="stylesheet" href="/../../styles/components/nav.css">
+    <link rel="stylesheet" href="/../../styles/components/general.css">
+    <link rel="stylesheet" href="/../../styles/components/card.css">
+    <link rel="stylesheet" href="/../../styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/scroller.css">
+    <link rel="stylesheet" href="/styles/components/header-bar.css">
+    <link rel="stylesheet" href="/styles/components/agents-card.css">
+    <link rel="stylesheet" href="/styles/components/pagination.css">
+    
+    <link rel="stylesheet" href="/styles/components/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+
+
+  <!-- ===== NAV ===== -->
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
+            <img src="/../../Image/Frame 296.png" alt="" class="nav__brand">
+            <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="/../../Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
+        </div>
+        <ul class="nav__list container" id="navList">
+            <li class="nav__item"><a class="nav__link" href="#">Rent</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Buy</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Agents</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+
+    <div class="header container">
+        <div class="header__container">
+        <div class="header__back">
+            <span class="header__arrow">&lt;</span>
+            <a href="/../../"><span class="header__home-text">Home</span></a>
+        </div>
+        </div>
+
+<!-- change the name of the page here -->
+
+            <h1 class="header__title">Property list</h1>
+    </div>
+
+<!-- DISCRIPTION -->
+
+    <section class="discription container">
+        <h1 class="discription__title title">Meet our agents</h1>
+        <p class="discription__p">
+            At LifeVenture Buy Choice Homes, our dedicated real estate agents are committed to helping you achieve your homeownership dreams.
+             With local market expertise and personalized service, our team provides guidance every step of the way,
+              whether you're buying, selling, or investing.
+               Meet our agents and discover how they can assist you in making informed decisions, 
+              finding the perfect property,
+             and navigating the real estate process with ease.
+              Your home journey starts here!
+        </p>
+    </section>
+
+<!-- SECTION OF AGENTS -->
+    
+    <section class="agents container">
+        <!-- AGENTS-CARD -->
+        <div id="agents__card-container">
+        </div>
+    </section>
+
+    <!-- pagination -->
+
+    <nav class="pagination">
+        <a href=""><button class="nav-btn">Back</button></a>
+        <div class="pages">
+            <a href=""><span class="page active">1</span></a>
+            <a href=""><span class="page">2</span></a>
+            <a href=""><span class="page">3</span></a>
+            <a href=""><span class="page">4</span></a>
+            <a href=""><span class="page">5</span></a>
+        </div>
+        <a href=""><button class="nav-btn">Next</button></a>
+    </nav>
+
+<!-- FOOTER -->
+
+
+<div class="footer">
+
+  <!-- Top Section -->
+  <div class="footer__top">
+    <!-- Discover -->
+    <div class="footer__section">
+      <a class="footer__title">Discover</a>
+      <a class="footer__title-menu" href="#">House for sales</a>
+      <a class="footer__title-menu" href="#">Condo</a>
+      <a class="footer__title-menu" href="#">Borey</a>
+      <a class="footer__title-menu" href="#">Villa</a>
+      <a href="#">Apartment</a>
+      <a class="footer__title-menu" href="#">Commercial</a>
+      <a class="footer__title-menu" href="#">Land of sale</a>
+      <a class="footer__title-menu" href="#">Shop house for sale</a>
+    </div>
+
+    <!-- Area -->
+    <div class="footer-section">
+      <a class="footer__title">Area</a>
+      <a class="footer__title-menu" href="#">Boeung Keng</a>
+      <a class="footer__title-menu" href="#">Kang</a>
+      <a class="footer__title-menu" href="#">Chamkarmon</a>
+      <a class="footer__title-menu" href="#">Tuol Kouk</a>
+      <a class="footer__title-menu" href="#">Daun Penh</a>
+      <a class="footer__title-menu" href="#">Mean Chey</a>
+      <a class="footer__title-menu" href="#">7 Makara</a>
+    </div>
+
+    <!-- Contact Us (spans both columns on small screens if needed) -->
+    <div class="footer-section" style="grid-column: span 2; margin-top: 12px;">
+      <a class="footer__title">Contact Us</a>
+      <a class="footer__title-menu" href="#">66A, Sihanouk Blvd, Phnom Penh, Cambodia</a>
+      <a class="footer__title-menu" href="https://applekhrealestate.com" target="_blank">applekhrealestate.com</a>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="footer__icons">
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-telegram"></i></a>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer__bottom">
+    © Apple KH real estate - All Rights Reserved
+  </div>
+
+</div>
+
+
+
+    <script>
+        // Mobile nav toggle
+        const nav = document.querySelector('.nav');
+        const navToggle = document.getElementById('navToggle');
+        navToggle?.addEventListener('click', () => {
+            const open = nav.classList.toggle('nav--open');
+            navToggle.setAttribute('aria-expanded', String(open));
+            console.log(String(open));
+        });
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+    </script>
+
+    <script src="/scripts/scroller.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
