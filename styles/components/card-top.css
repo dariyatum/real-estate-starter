@@ -12,6 +12,11 @@
   --section-bg:#EBEBEB;
 
   --h1:20px;
+
+  --white:#fff;
+}
+.darkmode{
+  --txtwhite:#000;
 }
 
 .card-top {
@@ -27,6 +32,11 @@
   justify-content: center;
   padding: 2.5% 0px;
 }
+.darkmode{
+    --txtwhite:#ffffff;
+    --white:#000;
+    --txtblack:#fff;
+}
 
 
 /* Make image fill the whole card */
@@ -34,7 +44,7 @@
   inset: 0;
   width: 100%;
   height: 200px;
-  background-color: white;
+  background-color: var(--txtwhite);
   opacity: 0.7;
   transition: opacity 0.4s ease, transform 0.4s ease;
   display: flex;
@@ -51,6 +61,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--white);
 }
 .card-top__titleInner{
   color: var(--txtblack);
