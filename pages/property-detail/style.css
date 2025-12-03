@@ -139,6 +139,7 @@ body{
     display: block;
     justify-content: center;
     border-radius: 15px;
+    margin-top: 10px;
     
 }
 
@@ -244,3 +245,76 @@ body{
     padding-top: 5px;
 }
 
+.card {
+        background: white;
+        width: 600px;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin: auto;
+    }
+
+    .card h2 {
+        margin: 0 0 15px 0;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .divider {
+        height: 2px;
+        background: #dcdcdc;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        margin-left: 10px ;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 2px solid #ddd;
+    }
+
+
+    .info {
+        flex-grow: 1;
+    }
+
+    .info .name {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .info-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    .info-row i {
+        font-size: 22px;
+        color: #28a745;
+        margin-right: 8px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        border: 1px solid #888;
+        background: #efefef;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .btn:hover {
+        background: #e2e2e2;
+        
+    }
