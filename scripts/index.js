@@ -16,7 +16,7 @@ fetch("/public/data/properties.json")
     if (data.length > 0) {
       for (let i = 0; i < 4; i++) {
         sectionPropertiesElement.innerHTML += `
-        <a class="card" href="/pages/property/${data[i].title.en}">
+        <a class="card" href="/pages/property-detail/index.html">
             <img class="card__media" src="${data[i].images}"
                 alt="${data[i].title.en}" />
             <div class="card__body">
@@ -40,7 +40,7 @@ fetch("/public/data/properties.json")
     if (data.length > 0) {
       for (let i = 2; i < 4; i++) {
         sectionPropertiesElement2.innerHTML += `
-        <a class="card" href="/pages/property/${data[i].title.en}">
+        <a class="card" href="/pages/property-detail/index.html">
             <img class="card__media" src="${data[i].images}"
                 alt="${data[i].title.en}" />
             <div class="card__body">
@@ -62,23 +62,23 @@ fetch("/public/data/properties.json")
     if (data.length > 0){
       for(let i = 4; i<5; i++) {
         latestPropertiesElement.innerHTML += `
-                  <article class="card-top  card-top__latest-properties-long" style="posiion:relative;">
+            <article class="card-top  card-top__latest-properties-long" style="posiion:relative;"><a href="/pages/property-detail/index.html">
                         <span style="background-color: red; padding: 3px;color: white; border-radius: 10px; position:absolute; z-index:1; left:10px; top:10px;">feature</span>feature</span>
                 <img class="card-top__media card-top__media-latest" src="${data[i].images}" alt="Studio near BKK1" />
 
                 <div class="card-top__body card-top__body-latest">
                     <h3 class="card-top__title card-top_title-latest-long">${data[i].title.en}</h3>
                     <div class="card-top__meta card-top__meta-latest-long">${data[i].price} ${data[i].currency}/ month</div>
-                </div>
+                </div></a>
                
             </article>
-            <article class="card-top card-top__latest-properties-short" style="position:relative;">
+            <article class="card-top card-top__latest-properties-short" style="position:relative;"><a href="/pages/property-detail/index.html">
                 <span style="background-color: red; padding: 3px;color: white; border-radius: 10px; position:absolute; z-index:1; left:10px; top:10px;">feature</span>
                 <img class="card-top__media card-top__media-latest" src="${data[i].images}" alt="Condo in Chroy Changvar" />
                 <div class="card-top__body card-top__body-latest">
                     <h3 class="card-top__title card-top_title-latest-short">${data[i].title.en}</h3>
                     <div class="card-top__meta card-top__meta-latest-short">${data[i].price} ${data[i].currency}/ month</div>
-                </div>
+                </div></a>
             </article>
         `;
       }
@@ -94,21 +94,21 @@ fetch("/public/data/properties.json")
       for(let i= 5; i<6; i++){
         console.log(data[1]);
         latestPropertiesElement2.innerHTML += `
-        <article class="card-top card-top__latest-properties-short" style="position:relative;">
+         <article class="card-top card-top__latest-properties-short" style="position:relative;"><a href="/pages/property-detail/index.html">
              <span style="background-color: red; padding: 3px;color: white; border-radius: 10px; position:absolute; z-index:1; left:10px; top:10px;">feature</span>
                 <img class="card-top__media card-top__media-latest" src="${data[i].images}" alt="Townhouse in Russey Keo" />
                 <div class="card-top__body card-top__body-latest">
                     <h3 class="card-top__title card-top_title-latest-short">${data[i].title.en}</h3>
                     <div class="card-top__meta card-top__meta-latest-short">${data[i].price} ${data[i].currency}</div>
-                </div>
+                </div></a>
             </article>
-             <article class="card-top card-top__latest-properties-long" style="position:relative;">
+              <article class="card-top card-top__latest-properties-long" style="position:relative;"><a href="/pages/property-detail/index.html">
               <span style="background-color: red; padding: 3px;color: white; border-radius: 10px; position:absolute; z-index:1;  left:10px; top:10px;">feature</span>
                 <img class="card-top__media card-top__media-latest" src="${data[i].images}" alt="Townhouse in Russey Keo" />
                 <div class="card-top__body card-top__body-latest">
                     <h3 class="card-top__title card-top_title-latest-long">${data[i].title.en}</h3>
                     <div class="card-top__meta card-top__meta-latest-long">${data[i].price} ${data[i].currency}</div>
-                </div>
+                </div></a>
             </article>
 
         `;

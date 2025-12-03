@@ -394,6 +394,9 @@ img {
   justify-content: space-between;
 }
 
+.testimonial-card p{
+  text-align: left;
+}
 .testimonial-card:nth-child(3) {
   background: #bdc3c7; /* Gray card in example */
   color: #333;
