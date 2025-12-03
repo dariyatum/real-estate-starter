@@ -64,3 +64,21 @@
     margin: auto;
     border-radius: 30px;
 }
+
+
+.buy{
+    width: 100%;
+    margin-left: 3%;
+    /* background-color: aquamarine; */
+}
+ 
+.buy-buy{
+    width: 90%;
+    margin-top: 10px;
+    /* background-color: rgb(196, 72, 72); */
+}
+
+.buy-buy h1{
+    font-size: 18px;
+    
+}

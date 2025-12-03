@@ -52,7 +52,11 @@
     }
     .agents-container {
         display: block;
+        max-width: 375px;
         width: 100%;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+    }
+    .agent-card{
+        width: 10%;
     }
 }

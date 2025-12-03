@@ -3,7 +3,7 @@
     "id": 301,
     "full_name": "Sok Dara",
     "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
-    "address": "Sen Sok",
+
     "contact": {
       "phone": "010-234-567",
       "email": "sok.dara@cityhomes.com"
@@ -13,7 +13,7 @@
   {
     "id": 302,
     "full_name": "Chan Vibol",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpeg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "011-456-789",
       "email": "chan.vibol@cityhomes.com"
@@ -23,7 +23,7 @@
   {
     "id": 303,
     "full_name": "Kim Sreypov",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpeg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "012-678-345",
       "email": "kim.sreypov@cityhomes.com"
@@ -33,7 +33,7 @@
   {
     "id": 304,
     "full_name": "Lim Rithy",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpeg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "097-888-123",
       "email": "lim.rithy@cityhomes.com"
@@ -43,7 +43,7 @@
   {
     "id": 305,
     "full_name": "Men Sopheak",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpeg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "069-445-889",
       "email": "men.sopheak@cityhomes.com"
@@ -53,7 +53,7 @@
   {
     "id": 306,
     "full_name": "Touch Socheata",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpeg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "015-998-221",
       "email": "touch.socheata@cityhomes.com"
@@ -63,7 +63,7 @@
   {
     "id": 307,
     "full_name": "Phan Chenda",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpegimages/agents/phan_chenda.jpg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "093-445-210",
       "email": "phan.chenda@cityhomes.com"
@@ -73,7 +73,7 @@
   {
     "id": 308,
     "full_name": "Vong Sovath",
-    "profile_photo": "/public/assets/images/agents/chan_vibol.jpg.jpegimages/agents/phan_chenda.jpg",
+    "profile_photo": "/public/assets/images/agents/sok_dara.jpg.webp",
     "contact": {
       "phone": "099-177-334",
       "email": "vong.sovath@cityhomes.com"

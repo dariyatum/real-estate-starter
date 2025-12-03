@@ -8,10 +8,11 @@
     --backgroud-card:#E8E8E8;
   
     --border:0.2px solid #A5A5A5; 
+    --txtblack:#000;
   }
- body{
+  body{
     background-color: var(--surface);
- } 
+  }
   .footer {
     margin: auto;
     background: var(--accent);
@@ -25,7 +26,7 @@
 
   .footer__top {
     background: var(--backgroud-card);
-    color: #000;
+    color: var(--txtblack);
     padding: 30px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,16 +35,21 @@
 
   .footer__title-menu {
     display: block;
-    color: #000;
+    color: var(--txtblack);
     text-decoration: none;
     margin-bottom: 6px;
     font-size: 14px;
   }
 
+
   .footer__title {
     font-weight: bold;
     margin-bottom: 12px;
     pointer-events: none;
+  }
+  .footer__title-menu:hover{
+    color:var(--txtblack);
+    font-weight: 600;
   }
 
   .footer__icons {

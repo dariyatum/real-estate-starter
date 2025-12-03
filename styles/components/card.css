@@ -6,19 +6,17 @@
 }
 
 .card {
-  flex: 0 0 em;
+  flex: 0 0 22em;
   display: flex;
-  flex-direction: column;
   background: var(--surface);
   /* border: 1px solid var(--line); */
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-
 .card__media {
-  width: 350px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -35,29 +33,48 @@
 }
 .card__title {
   margin: 0 0 6px;
-  font-size: 1rem;
+  font-size: 19px;
 }
 
+
+
 .card__location{
+  font-size: 18px;
+}
+
+.card__location i{
+  font-size: 22px ;
+}
+.card__tion{
   font-size: 20px;
+  /* margin-left: 30px; */
 }
 
 .card__tion{
-  font-size: 15px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.card__icon{
+  font-size: 20px;
+}
+.card__icon{
+  font-size: 20px;
 }
 .card__icon i{
   font-size: 22px;
- 
 }
 
-.badge span{
-}
+
 
 
 .badge{
   width: 80px;
 }
 .card__meta {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  /* font-size: 0.9rem; */
   color: var(--muted);
+  font-size: 21px;
+  /* margin-left: 30px; */
 }

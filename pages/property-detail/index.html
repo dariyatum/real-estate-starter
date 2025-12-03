@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property-detail</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/../../styles/main.css">
-    <link rel="stylesheet" href="/../../styles/components/nav.css">
-    <link rel="stylesheet" href="/../../styles/components/general.css">
-    <link rel="stylesheet" href="/../../styles/components/card.css">
-    <link rel="stylesheet" href="/../../styles/components/card-top.css">
+   <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/components/nav.css">
     <link rel="stylesheet" href="/styles/scroller.css">
-    <link rel="stylesheet" href="/styles/components/header-bar.css">
-    <link rel="stylesheet" href="/styles/components/agents-card.css">
-    <link rel="stylesheet" href="/styles/components/pagination.css">
+    
+    <link rel="stylesheet" href="/styles/components/card-top.css">
+    <link rel="stylesheet" href="/styles/components/general.css">
+
+    <link rel="stylesheet" href="/styles/sticky.css">
+    <link rel="stylesheet" href="/styles/agents.css">
+    <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
+    <link rel="stylesheet" href="/styles/components/footer">
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/components/footer.css">
     <link rel="stylesheet" href="/styles/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
+    <link rel="stylesheet" href="/styles/components/long and short card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container">
@@ -26,6 +32,7 @@
         <div class="header__back">
             <span class="header__arrow">&lt;</span>
             <a href="/../../"><span class="header__home-text">Home</span></a>
+            <div class="header-color-head"></div>
         </div>
         </div>
       <div class="picture-section">
@@ -87,6 +94,47 @@
             </div>
       </div>
       </div>
+      <div class="property-details">
+  <h2>Property details</h2>
+
+  <div class="details-grid">
+    <div class="detail-item">
+      <img src="/Image/bed.png" alt="bed icon">
+      <span class="value">4</span>
+      <span class="label">Bedrooms</span>
+    </div>
+
+    <div class="detail-item">
+      <img src="/Image/ bathroom.png">2</span>
+      <span class="label">Bathroom</span>
+    </div>
+
+    <div class="detail-item">
+      <img src="/Image/swim.png" alt="bed icon">
+      <span class="value">2</span>
+      <span class="label">Swimming pool</span>
+    </div>
+
+    <div class="detail-item">
+      <img src="/Image/clock.png" alt="bed icon">
+      <span class="value">2022</span>
+      <span class="label">Built in year</span>
+    </div>
+
+    <div class="detail-item">
+      <img src="/Image/living-room.png" alt="bed icon">
+      <span class="value">1</span>
+      <span class="label">Living room</span>
+    </div>
+
+    <div class="detail-item">
+      <img src="/Image/car.png" alt="bed icon">
+      <span class="value">2</span>
+      <span class="label">Cars</span>
+    </div>
+  </div>
+</div>
+
       <div class="address-section">
         <h2>Address</h2>
 
@@ -138,49 +186,90 @@
         </div>
       </div>
     </div>
+ <div class="contact-form">
+             
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
 
-        <div class="property-details">
-  <h2>Property details</h2>
+            <label for="phone">Your phone</label>
+            <input type="tel" id="phone" placeholder="Enter your phone">
 
-  <div class="details-grid">
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </div>
+        
+         <section class="section container" style="background-color: #EBEBEB; border-radius: 10px; border: 0.2px solid grey;">
+        <div class="section__head">
+            <h2 class="section__title">Latest Properties</h2>
+        </div>
+     <div id="section__properties" style="display: flex; gap: 1rem;"></div>
+    </section>
+
+       <!-- ===== Latest Properties (Horizontal) ===== -->
+    <section class="section container">
+        <div class="section__head">
+            <h2 class="section__title">Featured Properties</h2>
+        </div>
+        <div class="section contianer latest-main" id="Latest-Properties" aria-label="Latest properties">
+
+              <!-- <a class="section__link" href="#">Show More</a> -->
+        </div>
+              <div class="section contianer latest-main" id="Latest-Properties2" aria-label="Latest properties">
+
+              <!-- <a class="section__link" href="#">Show More</a> -->
+
+              
+        </div>
+    </section>
+    <div class="footer">
+
+  <!-- Top Section -->
+  <div class="footer__top">
+    <!-- Discover -->
+    <div class="footer__section">
+      <a class="footer__title">Discover</a>
+      <a class="footer__title-menu" href="#">House for sales</a>
+      <a class="footer__title-menu" href="#">Condo</a>
+      <a class="footer__title-menu" href="#">Borey</a>
+      <a class="footer__title-menu" href="#">Villa</a>
+      <a href="#">Apartment</a>
+      <a class="footer__title-menu" href="#">Commercial</a>
+      <a class="footer__title-menu" href="#">Land of sale</a>
+      <a class="footer__title-menu" href="#">Shop house for sale</a>
     </div>
 
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
+    <!-- Area -->
+    <div class="footer-section">
+      <a class="footer__title">Area</a>
+      <a class="footer__title-menu" href="#">Boeung Keng</a>
+      <a class="footer__title-menu" href="#">Kang</a>
+      <a class="footer__title-menu" href="#">Chamkarmon</a>
+      <a class="footer__title-menu" href="#">Tuol Kouk</a>
+      <a class="footer__title-menu" href="#">Daun Penh</a>
+      <a class="footer__title-menu" href="#">Mean Chey</a>
+      <a class="footer__title-menu" href="#">7 Makara</a>
     </div>
 
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
-    </div>
-
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
-    </div>
-
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
-    </div>
-
-    <div class="detail-item">
-      <img src="bed-icon.svg" alt="bed icon">
-      <span class="value">2</span>
-      <span class="label">Bedrooms</span>
+    <!-- Contact Us (spans both columns on small screens if needed) -->
+    <div class="footer-section" style="grid-column: span 2; margin-top: 12px;">
+      <a class="footer__title">Contact Us</a>
+      <a class="footer__title-menu" href="#">66A, Sihanouk Blvd, Phnom Penh, Cambodia</a>
+      <a class="footer__title-menu" href="https://applekhrealestate.com" target="_blank">applekhrealestate.com</a>
     </div>
   </div>
-</div>
 
+  <!-- Social Icons -->
+  <div class="footer__icons">
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-youtube"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer__icons-media" href="#"><i class="fa-brands "></div>
       </div>
     <script src="index.js"></script>
   </body>
