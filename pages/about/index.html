@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="/pages/side-bar/index.css">
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+    <link rel="stylesheet" href="agents-cards.css">
+    <link rel="stylesheet" href="/styles/components/pagination.css">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
             <button class="nav__toggle" aria-expanded="false" aria-controls="navList" id="navToggle"><img src="/../../Image/pajamas_hamburger.png" alt="" class="nav__toggle--image"></button>
         </div>
         <ul class="nav__list container" id="navList">
-            <li class="nav__item"><a class="nav__link" href="pages/rent/index.html">Rent</a></li>
+            <li class="nav__item"><a class="nav__                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   link" href="/pages/rent/index.html">Rent</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/buy/index.html">Buy</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/about/index.html">About</a></li>
             <li class="nav__item"><a class="nav__link" href="/pages/agents/index.html">Agents</a></li>
@@ -52,7 +54,7 @@
             <h1 class="header__title">Property list</h1>
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
-        <img src="about photo.png" alt="" class="about__img">
+        <img src="https://i.pinimg.com/1200x/aa/2d/8a/aa2d8a714dd2f7be605eb6f3b8c93dfb.jpg" alt="" class="about__img">
         <h2 class="about__new" style="margin-top: 10px;text-align: center;">
             About News & Insights
         </h2> 
@@ -100,10 +102,6 @@ Our mission is to empower buyers, sellers, renters and homeowners with the knowl
             Whether you have questions about a specific topic or want to share your own experiences in the real estate market, we want to hear from you at news@realtor.com
 Follow us on Twitter, Facebook, Instagram, and LinkedIn and install our mobile app for the latest updates and expert advice.
         </p>
-        <h2 class="our__agents" style="margin-top: 10px; text-align: center;">
-            Our Agents
-        </h2>
-        here for agents section
         <h2 class="owner__ship" style="margin-top: 10px; text-align: center ;">
             Ownership
         </h2>
@@ -111,9 +109,27 @@ Follow us on Twitter, Facebook, Instagram, and LinkedIn and install our mo
             News & Insights is part of Realtor.com, and operated by Move Inc.For years, millions of home shoppers have turned to Realtor.com to find their dream home. It offers a comprehensive for-sale properties, as well as the information and tools to make informed real estate decisions.
 Move Inc. is owned by News Corp. News Corp (Nasdaq: NWS, NWSA; ASX: NWS, NWSLV) is a global, diversified media and information services company focused on creating and distributing authoritative and engaging content and other products and services. The company comprises businesses across a range of media, including: digital real estate services, subscription video services in Australia, news and information services and book publishing. Headquartered in New York, News Corp operates primarily in the United States, Australia, and the United Kingdom, and its content and other products and services are distributed and consumed worldwide. More information is available at: http://www.applekh.com.
         </p>
-    
+       <h2 class="our__agents" style="margin-top: 10px; text-align: center;">
+            Our Agents
+        </h2>
+          <section class="agents container" id="agents__card-container"></section>
 
+
+             <!-- pagination -->
+
+    <nav class="pagination">
+        <a href=""><button class="nav-btn">Back</button></a>
+        <div class="pages">
+            <a href=""><span class="page active">1</span></a>
+            <a href=""><span class="page">2</span></a>
+            <a href=""><span class="page">3</span></a>
+            <a href=""><span class="page">4</span></a>
+            <a href=""><span class="page">5</span></a>
+        </div>
+        <a href=""><button class="nav-btn">Next</button></a>
+    </nav>
  <div class="footer">
+    
 
   <!-- Top Section -->
   <div class="footer__top">
@@ -188,6 +204,7 @@ Move Inc. is owned by News Corp. News Corp (Nasdaq: NWS, NWSA; ASX: NWS, NWSLV) 
 
     <script src="/scripts/scroller.js"></script>
     <script src="/scripts/index.js"></script>
+    <script src="/../../pages/agents/index.js"></script>
     
 </body>
 
