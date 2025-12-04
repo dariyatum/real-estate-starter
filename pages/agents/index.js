@@ -13,7 +13,7 @@ fetch("/public/data/agents.json")
                     <div class="agents__card-content">
                         <h2 class="agents_card-name">${data[i].full_name}</h2>
                         <p class="agent__card-role">${data[i].address}</p>
-                        <a href="#"><button class="agents__card-profile-btn">View profile</button></a>
+                        <a href="/pages/agents-detail/index.html"><button class="agents__card-profile-btn">View profile</button></a>
                     </div>
                 </div>
                 `;

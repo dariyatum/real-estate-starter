@@ -40,11 +40,13 @@
   --txtwhite:#fff;
 
   --txtblack:#000;
+
+  --bgsection:#EBEBEB;
   
 
 }
 .contact__page{
-    background-color: bisque;
+    background-color: var(--bgsection);
     border-radius: 10px;
     padding: 10px;
 }
@@ -91,14 +93,17 @@
     opacity: 0.8;
   }
   .subscribre{
-    background-color: gray;
+    background-color: var(--bg);
     border-radius: 10px;
     padding: 30px;
+    border: 0.5px solid grey;
+   margin: 0;
   }
   .submk{
     margin-top: 40px;
   }
 
   .sub{
-    width: 300px;
+   
   }
+  .sub__
